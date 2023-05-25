@@ -70,6 +70,12 @@ a{
   color: black;
 }
 
+a, .label, .label:active {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+}
+
 .paragraph-xs{
   font-size: 0.9rem;
 }
