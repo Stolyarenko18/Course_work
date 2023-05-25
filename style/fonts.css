@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-Bold.ttf);    
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-BoldItalic.ttf);    
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-Italic.ttf);    
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro.ttf);    
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'GothamPro';
+    src: url(../Fonts/GothamPro/GothamPro-Light.ttf);    
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-BlackItalic.ttf);    
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-Bold.ttf);    
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-BoldItalic.ttf);    
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-DemiBold.ttf);    
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-DemiBoldItalic.ttf);    
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-Medium.ttf);    
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-Italic.ttf);    
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-MediumItalic.ttf);    
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-Regular.ttf);    
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Tttravels';
+    src: url(../Fonts/TTTravels/TTTravels-Black.ttf);    
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }

@@ -1,0 +1,126 @@
+header{
+    border-radius: 0 0 20px 20px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+}
+
+.card-container{
+    margin-top: 6rem;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    gap: 60px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+}
+
+.card {
+    /* flex: 0 0 auto; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.card-image {
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 75%;
+    border: 1px solid black;
+}
+
+.card img {
+    transition: all .3s ease-in-out;
+}
+
+.card:hover img {
+    translate: 50% -40%;
+    transition: all .3s ease-in-out;
+}
+
+#card-image-1 {
+    background-image: url(../Images/Screenshots/youssrirahman.png);
+}
+
+#card-image-2 {
+    background-image: url(../Images/Screenshots/silencio.png);
+}
+
+#card-image-3 {
+    background-image: url(../Images/Screenshots/our-revolution.png);
+}
+
+#card-image-4 {
+    background-image: url(../Images/Screenshots/theothersideoftruth.png);
+}
+
+#card-image-5 {
+    background-image: url(../Images/Screenshots/kprverse.png);
+}
+
+#card-image-6 {
+    background-image: url(../Images/Screenshots/takingshape.png);
+}
+
+.card p {
+    font-family: 'Tttravels';
+    font-size: 1.8rem;
+    line-height: 1.2;
+    width: fit-content;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.paragraph-arrow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.paragraph-arrow img {
+    width: 1.5rem;
+    /* margin-left: 1rem; */
+}
+
+
+
+@media (max-width: 1200px){
+    .card {
+        max-width: 380px;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+    }
+}
+
+@media (max-width: 992px){
+    #trend-cards{
+        padding-top: 70px;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .card-container{
+        gap: 30px;
+    }
+
+    header{
+        border-radius: 0 0 12px 12px;
+    }
+}

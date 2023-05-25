@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: GothamPro, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding-inline: 30px;
+  margin: auto;
+  padding-block: 70px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.grid-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "p p"
+    "p p"
+    "p p"
+    "b b";
+  gap: 60px 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Tttravels';
+}
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 2.8rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+a{
+  color: black;
+}
+
+.paragraph-xs{
+  font-size: 0.9rem;
+}
+
+.paragraph-s {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.paragraph-m {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.paragraph-m-tttravels{
+  font-family: 'Tttravels';
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.paragraph-l-tttravels{
+  font-family: 'Tttravels';
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.underline-green {
+  text-decoration: underline #c4f05c;
+}
+
+.underline-purple {
+  text-decoration: underline #4d1ac5;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.black-text {
+  color: black;
+}
+
+
+/* HEADER */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+header {
+  background-color: #4d1ac5;
+}
+
+.burger-btn{
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.burger-btn span{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  left: 5px;
+  transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.burger-btn span:nth-child(1){
+  transform: translateY(-10px);
+}
+
+.burger-btn span:nth-child(3){
+  transform: translateY(10px);
+}
+
+header.open .burger-btn span{
+  background-color: black;
+}
+
+header.open .burger-btn span:nth-child(1){
+  transform: translateY(0) rotate(45deg);
+}
+
+header.open .burger-btn span:nth-child(2){
+  opacity: 0;
+}
+
+header.open .burger-btn span:nth-child(3){
+  transform: translateY(0) rotate(-45deg);
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0 -25px 0 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .nav-menu li {
+  float: left;
+} */
+
+.nav-menu li a {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+header .nav-menu li a:hover{
+  border-bottom: .1rem solid #c4f05c;
+  transition: all .3s ease-in-out;
+}
+
+.current-page a {
+  border-bottom: .1rem solid #c4f05c;
+}
+
+.brand-icon {
+  padding-top: 10px;
+}
+
+
+
+/* FOOTER SECTION */
+
+footer {
+  margin-top: 70px;
+  padding-inline: 30px;
+}
+
+footer .container {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 15px 0;
+  align-items: center;
+}
+
+footer .nav-menu {
+  margin: 0;
+}
+
+footer .nav-menu li a {
+  color: black;
+  font-weight: 400;
+}
+
+footer .nav-menu li:hover a{
+  color: rgb(90, 90, 90);
+}
+
+footer .nav-menu li:last-child a {
+  margin-right: 0;
+}
+
+
+/* VIDEO */
+
+video {
+  width: 100%;
+  border-radius: 2.5rem;  
+}
+
+.video p {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.video a {
+  color: white;
+}
+
+@media (max-width: 1200px){
+  html {
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .container{
+    padding-block: 50px;
+  }
+
+  .burger-btn{
+    display: block;
+  }
+
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0;
+    transition: all .3s ease;
+    z-index: 2;
+    border-radius: 0 0 30px 30px;
+  }
+
+  header.out {
+    transform: translateY(-100%);
+  }
+  header nav{
+    z-index: 1;
+    position: absolute;
+    left: -350px;
+    top: 0;
+    width: 350px;
+    background-color: #c4f05c;
+    display: block;
+    transition: transform .5s;
+    border-radius: 40px;
+  }
+
+  header .nav-menu{
+    display: block;
+    padding: 75px 65px 40px 40px;
+    margin: 0;
+  }
+  header .nav-menu li{
+    display: block;
+    padding: 1rem 0;
+  }
+
+  header .nav-menu li a{
+    color: black;
+    text-align: right;
+    font-size: 1.3rem;
+    margin-inline: 0;
+    padding-bottom: .8rem;
+  }
+
+  header .nav-menu li a:hover{
+    border-bottom: 0;
+  }
+  
+  header.open nav{
+    transform: translateX(100%);
+  }
+
+  .current-page a {
+    border-bottom: .12rem solid black;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.6rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+
+  .paragraph-s {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .paragraph-xs{
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px){
+  h1 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .grid-text{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "p"
+      "p"
+      "p"
+      "p"
+      "p"
+      "p"
+      "b";
+    gap: 30px 30px;
+  }
+
+  .container{
+    padding-block: 30px;
+  }
+
+  footer .container{
+    flex-direction: column-reverse;
+  }
+
+  footer .nav-menu a{
+    font-size: 1.5rem;
+  }
+
+  footer .nav-menu{
+    margin-block: 1rem 2rem;
+  }
+
+  footer .nav-menu li:last-child a {
+    margin-right: 25px;
+}
+}
+
+@media (max-width: 576px){
+  header{
+    border-radius: 0 0 15px 15px;
+  }
+
+  header nav{
+    left: -280px;
+    width: 280px;
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .paragraph-m {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .paragraph-s {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+
+  .paragraph-m-tttravels{
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .paragraph-l-tttravels{
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .burger-btn span{
+    width: 30px;
+    height: 1.5px;
+  }
+
+  .container, header .container{
+    padding-inline: 15px;
+  }
+
+  footer .nav-menu{
+    display: none;
+  }
+}

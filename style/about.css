@@ -1,0 +1,54 @@
+header{
+    border-radius: 0 0 20px 20px;
+}
+
+#about grid{
+    align-items: start;
+}
+
+.photo{
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    border: 1px solid black;
+    grid-column: 1 / span 5;
+    align-self: stretch;
+    background-image: url(../Images/author.jpg);
+}
+
+.about-text{
+    grid-column: span 7;
+}
+
+h1{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+h3{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#p-cont{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px){
+    #about{
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 768px){
+    #about .photo{
+        display: none;
+    }
+
+    .about-text{
+        grid-column: 1 / -1;
+    }
+}
